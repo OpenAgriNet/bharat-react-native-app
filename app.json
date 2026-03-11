@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "bharat-react-native-app",
+    "name": "Bharat Vistaar",
     "slug": "bharat-react-native-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,7 +12,16 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gov.in.vistaar",
+      "buildNumber": "2",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app needs microphone access for voice chat.",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true,
+          "NSAllowsArbitraryLoadsInWebContent": true
+        }
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -21,7 +30,13 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.gov.in.vistaar",
+      "versionCode": 1,
+      "permissions": [
+        "RECORD_AUDIO",
+        "MODIFY_AUDIO_SETTINGS"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"

@@ -1,0 +1,14 @@
+cat node_modules/react-native-webview/package.json | grep '"version"'
+npm install react-native-safe-area-context
+npx expo prebuild --clean
+npm run start
+open ios/BharatVistaar.xcworkspace
+
+
+
+-- Generate the IOS build and push to test flight
+npx expo prebuild --clean
+open ios/BharatVistaar.xcworkspace
+Select Any iOS Device (arm64) from top bar
+Product → Archive
+Once done → Distribute App → App Store Connect → Upload
